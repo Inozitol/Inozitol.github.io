@@ -1,0 +1,108 @@
+@font-face{
+	font-family: 'IBM_BIOS';
+	src: url('IBM_BIOS.woff') format('woff'),
+	     url('IBM_BIOS.ttf') format('truetype');
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: IBM_BIOS;
+	display: table;
+	width: 100%;
+}
+
+.topbox{
+	background-color: #55ffff;
+	text-align: center;
+	width: 100%;
+	height: 5%;
+	font-family: inherit;
+	line-height: 125%;
+	font-size: 200%;
+	display: table-row;
+
+}
+
+.selectbar{
+	background-color: blue;
+	width: 100%;
+	height: 4%;
+	display: table-row;
+}
+
+.selectbar a{
+	float: left;
+	background-color: blue;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-decoration: none;
+	color: grey;
+	height: 100%;
+	font-size: 200%;
+	padding-left: 10;
+	padding-right: 10;
+}
+
+.selectbar a:active{
+	background-color: #aaaaaa;
+	color: blue;
+}
+
+.frame{
+	display: table-row;
+	overflow: hidden;
+	position: absolute;
+	top: 8.1%;
+	bottom: 0;
+	width: 100%;
+}
+
+iframe{
+	height: 100%;
+	width: 100%;
+}
+
+.lottext{
+	font: inherit;
+	font-size: 150%;
+	color: black;
+	border-style: solid;
+	border-width: 3px;
+	width: 70%;
+	height: 97%;
+	position: absolute;
+	overflow: hidden;
+	margin-top: 8;
+	margin-bottom: 8;
+	margin-left: 3;
+}
+
+.lottext p{
+	margin: 5;
+}
+
+.lottext b{
+	color: blue;
+	margin-left: 5;
+}
+
+.rightbox {
+	font: inherit;
+	font-size: 150%;
+	color: black;
+	border-style: solid;
+	border-width: 3px;
+	width: 30%;
+	height: 97%;
+	position: absolute;
+	margin-top: 8;
+	margin-bottom: 8;
+	
+	right: 0;
+}
+
+.frameback{
+	background-color: #aaaaaa;
+}
