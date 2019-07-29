@@ -101,3 +101,7 @@ iframe{
 	background-color: #aaaaaa;
 	display: flex;
 }
+
+.rightbox b{
+	margin-left: 3;
+}
