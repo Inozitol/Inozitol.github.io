@@ -8,9 +8,7 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: IBM_BIOS;
-	display: table;
 	width: 100%;
-	height: 100%;
 }
 
 .topbox{
@@ -21,14 +19,12 @@ body{
 	font-family: inherit;
 	line-height: 125%;
 	font-size: 200%;
-	display: table-row;
 }
 
 .selectbar{
 	background-color: blue;
 	width: 100%;
-	height: 4%;
-	display: table-row;
+	height: 5%;
 }
 
 .selectbar a{
@@ -54,7 +50,7 @@ body{
 	display: table-row;
 	overflow: hidden;
 	position: absolute;
-	top: 8.1%;
+	top: 10%;
 	bottom: 0;
 	width: 100%;
 }
@@ -71,11 +67,11 @@ iframe{
 	border-style: solid;
 	border-width: 3px;
 	width: 70%;
-	overflow: hidden;
+	position: relative;
+	/* overflow: hidden; */
 	margin-top: 8;
 	margin-bottom: 8;
-	margin-left: 8;
-	float: left;
+	margin-left: 3;
 }
 
 .lottext p{
@@ -93,18 +89,14 @@ iframe{
 	color: black;
 	border-style: solid;
 	border-width: 3px;
-	border-left: 0;
+	border-left: 0px;
 	width: 30%;
+	position: relative;
 	margin-top: 8;
 	margin-bottom: 8;
-	margin-right: 8;
-	float: left;
 }
 
 .frameback{
 	background-color: #aaaaaa;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
 	display: flex;
 }
