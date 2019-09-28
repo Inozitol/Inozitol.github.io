@@ -41,11 +41,6 @@ body{
 	padding-right: 10;
 }
 
-.selectbar a:active{
-	background-color: #aaaaaa;
-	color: blue;
-}
-
 .frame{
 	display: table-row;
 	overflow: hidden;
@@ -68,7 +63,6 @@ iframe{
 	border-width: 3px;
 	width: 70%;
 	position: relative;
-	/* overflow: hidden; */
 	margin-top: 8;
 	margin-bottom: 8;
 	margin-left: 3;
@@ -85,7 +79,7 @@ iframe{
 
 .rightbox {
 	font: inherit;
-	font-size: 150%;
+	font-size: 130%;
 	color: black;
 	border-style: solid;
 	border-width: 3px;
@@ -102,6 +96,16 @@ iframe{
 	display: flex;
 }
 
-.rightbox b{
-	margin-left: 3;
+.contain{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	display: flex;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	border-bottom: 3px solid black;
 }

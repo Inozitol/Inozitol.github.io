@@ -1,22 +1,37 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			function site_change(){
+				var site = document.getElementById("mframe").contentWindow.location.href;
+				site = site.substring(site.lastIndexOf('/')+1, site.length-5);
+
+				var elements = document.getElementsByTagName("a");
+				for(var i = 0, max = elements.length; i< max; i++){
+					elements[i].style.color = "#aaaaaa";
+					elements[i].style.backgroundColor = "blue";
+				}
+				document.getElementById(site).style.color = "blue"; 
+				document.getElementById(site).style.backgroundColor = "#aaaaaa"; 
+			};
+		</script>
 	</head>	
 	<body>
 		<div class=topbox>
 			<b>	
-				HORYS SETUP 0.1	
+				HORYS SETUP 0.2	
 			</b>	
 		</div>
 		<div class=selectbar>
-			<a href=home.html target="mainframe">Home</a>			
-			<a href=cplusplus.html target="mainframe">C++</a>
-			<a href=web.html target="mainframe">Web</a>
+			<a href=home.html target="mainframe" id="home">HOME</a>			
+			<a href=cpp.html target="mainframe" id="cpp">C++</a>
+			<a href=about.html target="mainframe" id="about">ABOUT ME</a>
+			<a href=contact.html target="mainframe" id="contact">CONTACT</a>
 		</div>
-		<div class=frame>
-		<iframe src="home.html" name="mainframe">
+		<div class="frame">
+			<iframe src="home.html" name="mainframe" id="mframe" frameBorder="0" onload="site_change()">
 
-		</iframe>
+			</iframe>
 		</div>
 	</body>
 </html>
