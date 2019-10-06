@@ -1,13 +1,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
 		<script>
 			function site_change(){
 				var site = document.getElementById("mframe").contentWindow.location.href;
 				site = site.substring(site.lastIndexOf('/')+1, site.length-5);
 
 				var elements = document.getElementsByTagName("a");
-				for(var i = 0, max = elements.length; i< max; i++){
+				for(var i = 0, max = elements.length; i<max; i++){
 					elements[i].style.color = "#aaaaaa";
 					elements[i].style.backgroundColor = "blue";
 				}

@@ -1,25 +1,25 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<script>
+		
+	function frame_load(){
+		var iframes = document.getElementsByClassName("textframe");
+		for(var i = 0, max = iframes.length; i<max; i++){
+			iframes[i].height=iframes[i].contentWindow.document.body.scrollHeight;
+			iframes[i].width=iframes[i].contentWindow.document.body.scrollWidth;
+		}
+	}
+	</script>
 </head>
 
 <body class="frameback">
 	<div class="contain">
-	<span class="lottext">
-		<b>AND THAN YOU SAW SOMETHING BEAUTIFUL!</b>
-		<br>
-		<p>A WEBSITE WITH MINIMAL USAGE OF JAVASCRIPT AND BLOAT. YES, IT'S POSSIBLE. AS YOU CAN SEE, THERE IS ONLY ONE JS FUNCTION ON THIS WHOLE WEBSITE AND THAT'S ALL YOU NEED. NO BUTTONS WITH BLOATED AND USELESS EFFECTS. NO 10 KILOGRAMS OF J-QUERY. NO 20MB PICTURE OF AESTHETIC VIEW ON SOME LANDSCAPE, THAT'S THERE ONLY TO BE SCROLLED AWAY. </p>
-		<br>
-		<b>TELL ME YOU NEED SOMETHING MORE.</b>
-		<ul>
-			<li>CLEAR AND EASY TO UNDERSTAND SELECTION BAR</li>
-			<li>NO ANIMATED TRENDY LOGO, THAT'S OVERLOOKED BY EVERYONE</li>
-			<li>EVERY SITE IS EASY TO READ</li>
-			<li>IT RUNS FAST</li>
-			<li>THE MOST HEAVY STUFF IS THIS FONT</li>
-		</ul>
-		<b>I KNOW I'M COMPLAINING ABOUT SOMETHING I SHOULD HAVE NO WORD ON!</b>
-		<p>BUT GOD DAMN, WHEN I WANT TO SEE SOME INTERNET NEWS AND THE PAGE IS LOADING LONGER THAN 5 SECONDS, THAN YOU KNOW THAT SOMETHING IS VERY WRONG.</p>
-	</span>
+		<div class="textframe">
+			<iframe src="home_frame.html" frameBorder="0"> 
+
+			</iframe>
+		</div>
 	<span class="rightbox">
 		<b>SIZES OF FILES</b>
 		<ul>
