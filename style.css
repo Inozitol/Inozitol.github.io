@@ -123,3 +123,7 @@ img{
 ::-webkit-scrollbar-track{
 	background: #AAAAAA;
 }
+
+::-webkit-scrollbar-corner{
+	background: #AAAAAA;
+}
