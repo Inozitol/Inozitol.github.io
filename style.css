@@ -46,10 +46,11 @@ body{
 .frame{
 	display: table-row;
 	overflow: hidden;
-	position: absolute;
+	position: sticky;
 	top: 10%;
 	bottom: 0;
 	width: 100%;
+	height: 90vh;
 }
 
 iframe{
