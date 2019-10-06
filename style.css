@@ -15,18 +15,16 @@ body{
 	background-color: #55ffff;
 	text-align: center;
 	width: 100%;
-	height: 5%;
+	height: 38px;
 	font-family: inherit;
 	line-height: 125%;
 	font-size: 200%;
-	min-height: 38px;
 }
 
 .selectbar{
 	background-color: blue;
 	width: 100%;
-	height: 5%;
-	min-height: 38px;
+	height: 38px;
 }
 
 .selectbar a{
@@ -45,7 +43,6 @@ body{
 
 .frame{
 	overflow: hidden;
-	position: sticky;
 	top: 10%;
 	bottom: 0;
 	width: 100%;
