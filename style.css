@@ -44,7 +44,6 @@ body{
 }
 
 .frame{
-	display: table-row;
 	overflow: hidden;
 	position: sticky;
 	top: 10%;
